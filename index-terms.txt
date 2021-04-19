@@ -1,6 +1,6 @@
 3-itemsets
-3d convolution
-3d model
+2d
+3d 
 absolute value rectiﬁcation
 accuracy
 acf
@@ -20,7 +20,6 @@ adversarial loss
 adversarial training
 age detection
 ai
-aie
 alexnet
 almost everywhere
 almost sure convergence
@@ -29,12 +28,7 @@ alpine miner
 alternating least square
 alternative hypothesis
 amazon web service
-analysis over time
-analytical
-analytical architecture
-analytical tool
 analytics
-analytics lifecycle case study
 ancestral sampling
 animation character
 ann
@@ -44,7 +38,6 @@ anscombe’s quartet
 aov
 apache hadoop
 apis
-apparel model
 application
 application programming interface
 applied information economics
@@ -56,20 +49,15 @@ apriori property
 architecture
 area under the curve
 arima
-arima model
 arma
-arma model
 array
 artificial neural network
 artistic style transfer
 artiﬁcial intelligence
 artiﬁcial neural network
-artiﬁcial neural networkannealed importance sampling
 association rule
 asymptotically unbiased
-attending for classification
 attention network
-attribute
 auc
 audience
 audio
@@ -77,15 +65,11 @@ autocorrelation function
 autoencoder
 autoencoders
 automatic speech recognition
-autoregressive model
-autoregressive moving average
-average
+autoregressive
 aws
 aﬃne
 back-propagation
-back-propagation through time
-backprop
-backpropagation through time
+backpropagation
 backward slash
 bag of word
 bag-of-words
@@ -165,14 +149,11 @@ centroid
 chain rule
 challenge
 character
-character data type
-characteristic
 chart
 chord
 chordal graph
 cifar dataset
 class
-class-based language model
 classical dynamical system
 classification
 classification datasets
@@ -322,7 +303,6 @@ deep blue
 deep boltzmann machine
 deep feedforward network
 deep learning
-deep learning model
 deeplab v3
 deliverable
 delta framework
@@ -348,8 +328,7 @@ dictionary learning
 differencing
 dilated convolution
 dirac delta function
-directed graphical model
-directed graphicalmodel
+directed graphical
 directional derivative
 dirty data
 discovery phase
@@ -388,9 +367,6 @@ efficientnet
 eigendecomposition
 eigenvalue
 eigenvector
-elbo
-element
-element-wise product
 embedding
 emc google search
 emoticon
@@ -400,8 +376,7 @@ empirical risk minimization
 encoder
 energy function
 energy-based model
-engineering
-ensemble method
+ensemble
 enterprise data warehouse
 epoch
 equality constraint
@@ -455,8 +430,6 @@ financial information
 finding
 fine-tuning
 finite diﬀerences
-fitted model
-fitted time series model
 fnr
 for segmentation
 forecasting
@@ -482,8 +455,6 @@ from scratch
 fully connected layer
 fully-visible
 fully-visible bayes network
-function
-functional derivative
 fusing
 fvbn
 gans
@@ -582,7 +553,6 @@ imagenet
 in-database
 inception
 inception-resnet
-independent
 independent variable
 inertia
 information content
@@ -593,7 +563,7 @@ interactive development environment
 internal node
 internet of thing
 intersect operator
-inventory
+inventorya
 inverted document frequency
 iqr
 irrelevant variable
@@ -636,7 +606,6 @@ lift
 linear
 linear classification
 linear regression
-linear regression model
 linear support vector machine
 linearity assumption
 lm
@@ -681,7 +650,7 @@ minimum confidence
 missing data
 mllib
 mlp
-mnist model
+mnist
 mobile
 mobile device
 mobile phone company
@@ -692,7 +661,7 @@ model planning phase
 model selection
 model-free collaborative filtering
 morphological feature
-moving average model
+moving average
 mpp
 mturk
 multi-class
@@ -787,7 +756,7 @@ pose
 posteriori
 precision
 preparing
-pretrained model
+pretrained
 pretrained word2vec embeddings
 principal component analysis
 probabilistic latent semantic analysis
@@ -831,8 +800,6 @@ rnn
 robot
 roc
 roc curve
-role
-root
 rpart
 rpart function
 rstudio gui
@@ -849,7 +816,7 @@ scatterplot matrix
 scatterplots
 scenario
 scientific method
-scikit-learn tool
+scikit-learn
 search
 search retrieval
 seasonality
@@ -869,7 +836,6 @@ similarity between face
 simple cnn
 single variable
 singular value decomposition
-skipping for training
 smart device
 smartphones
 smoothing
@@ -881,19 +847,14 @@ spectral analysis
 spectral clustering
 spreadmarts
 spreadsheet
-spss modeler
+spss
 sql
-sql analysis service
-sqlquery
-squeezenet model
+squeezenet
 sssim
 stakeholder
 stakeholder identification
 starting position
 stationary time series
-statistica
-statistical model
-statistical technique
 stemming
 stochastic gradient descent
 stochastic gradient descent algorithm
@@ -933,7 +894,7 @@ tf-idf
 tfidf
 the data science handbook
 three-dimensional
-time series analysis
+time series
 tokenization
 tom
 tool
@@ -941,7 +902,6 @@ topic modeling
 toy datasets
 tp
 tpr
-trained model
 training
 trajectory
 transaction data
@@ -955,10 +915,8 @@ true positive rate
 turing test
 two-sided hypothesis test
 two-sided hypothesis testing
-type
 type i error
 type ii error
-typeof
 ucf101
 ultra-nerve segmentation
 underfitting
