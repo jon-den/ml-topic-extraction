@@ -227,9 +227,9 @@ if __name__ == '__main__':
     add_arg('--stem', type=str2bool, default=True, help='Apply word stemming to text and index terms. Default: True.')
     add_arg('--pdfs', nargs="+", type=str, help='List of PDF files (or single folder) as input for word cloud generation. If folder is specified, use all PDF files in this folder.')
     add_arg('--figsize', type=tuple, default=(16, 9), help='Figure/Plot size. Controls resolution. Default: (16, 9).')
-    add_arg('--relative_scaling', type=float, default=.5, help='Importance of relative word frequencies for font-size in word cloud (between 0 and 1). Default: 0.5.')
-    add_arg('--max_font_size', type=int, default=100, help='Maximum font size in word cloud plot. Default: 100.')
-    add_arg('--scale', type=int, default=20, help='Controls coarseness of fit for the words. Default: 20.')
+    add_arg('--relative_scaling', type=float, default=.2, help='Importance of relative word frequencies for font-size in word cloud (between 0 and 1). Default: 0.5.')
+    add_arg('--max_font_size', type=int, default=72, help='Maximum font size in word cloud plot. Default: 100.')
+    add_arg('--scale', type=int, default=60, help='Controls coarseness of fit for the words. Default: 20.')
     add_arg('--height', type=int, default=400, help='Word cloud canvas height. Default: 400.')
     add_arg('--width', type=int, default=600, help='Word cloud canvas width. Default: 600.')
 

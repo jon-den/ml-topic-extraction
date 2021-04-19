@@ -172,9 +172,7 @@ clustering
 cnn
 cnns
 code synthesis
-coefficient
 collaborative filtering
-collider
 color image
 column family name
 column qualifier name
@@ -381,7 +379,6 @@ enterprise data warehouse
 epoch
 equality constraint
 equivariance
-error
 error function
 error measure
 esn
@@ -389,8 +386,6 @@ etlt
 euclidean distance
 euclidean norm
 euler-lagrange equation
-evaluation
-evaluation method
 evidence lower bound
 except operator
 expectation maximization
@@ -732,7 +727,6 @@ pacf
 packt publishing
 pamk
 parallel cnn
-parameter
 parameter confidence interval
 parametric test
 parsing
@@ -885,7 +879,6 @@ technology data enablers
 tensorboard
 tensorflow playground
 term frequency
-testing
 text analysis
 text mining
 textual data file
