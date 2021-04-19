@@ -1,4 +1,4 @@
-# Machine Learning Topic Extraction
+# Machine Learning Research Topic Extraction
 
 This script can be used to summarize and extract the main topics from a collection of research papers.
 
