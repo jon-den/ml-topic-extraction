@@ -207,6 +207,7 @@ def create_word_cloud(text: str, index_lst: List[str],
     fig, ax = plt.subplots(figsize=figsize)
     ax.imshow(wc, interpolation="bilinear")
     ax.axis("off")
+    plt.tight_layout()
     plt.savefig(filepath)
     plt.show()
 
