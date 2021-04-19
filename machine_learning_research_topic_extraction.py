@@ -117,12 +117,12 @@ def get_text_from_pdf(filepath: str) -> str:
     return text.lower()
 
 
-def write_unique_index_terms(filepath_out: str, filepaths_in,
+def write_unique_index_terms(filepath_out: str, filepaths_in: List[str],
                              encoding: str = 'utf-8'):
     """
     Combine list of index term files (e.g., from multiple books or proceedings)
     into single list of unique index terms and write them to file.
-    This file path can be adapted manually to fit the specific needs.
+    Run this method separately to create index term file.
     Args:
         filepath_out: absolute file path of file with joined index terms
         filepaths_in: list of absolute file path of file to be joined
@@ -230,8 +230,8 @@ if __name__ == '__main__':
     add_arg('--relative_scaling', type=float, default=.2, help='Importance of relative word frequencies for font-size in word cloud (between 0 and 1). Default: 0.5.')
     add_arg('--max_font_size', type=int, default=72, help='Maximum font size in word cloud plot. Default: 100.')
     add_arg('--scale', type=int, default=60, help='Controls coarseness of fit for the words. Default: 20.')
-    add_arg('--height', type=int, default=400, help='Word cloud canvas height. Default: 400.')
-    add_arg('--width', type=int, default=600, help='Word cloud canvas width. Default: 600.')
+    add_arg('--height', type=int, default=300, help='Word cloud canvas height. Default: 400.')
+    add_arg('--width', type=int, default=900, help='Word cloud canvas width. Default: 600.')
 
     args = parser.parse_args()
 
@@ -251,7 +251,7 @@ if __name__ == '__main__':
     with open(args.filepath_index, 'r', encoding='utf-8') as infile:
         index_terms = infile.read().split('\n')
 
-    # Create word cloud and save to file. Word cloud parameters are set
+    # Create word cloud and save to file. Default word cloud parameters are set
     # heuristically for pleasant visualization.
     print('Creating word cloud...')
     dct_out = create_word_cloud(joined_text, index_terms,
