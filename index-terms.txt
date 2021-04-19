@@ -1,0 +1,1002 @@
+3-itemsets
+3d convolution
+3d model
+absolute value rectiﬁcation
+accuracy
+acf
+acme
+acme text analysis
+activation function
+active constraint
+actor-critic-based algorithm
+adaboost
+adagrad
+adaline
+adam
+adaptive linear element
+adjusted rand index
+adversarial
+adversarial loss
+adversarial training
+age detection
+ai
+aie
+alexnet
+almost everywhere
+almost sure convergence
+alphine miner
+alpine miner
+alternating least square
+alternative hypothesis
+amazon web service
+analysis over time
+analytical
+analytical architecture
+analytical tool
+analytics
+analytics lifecycle case study
+ancestral sampling
+animation character
+ann
+annealed importance sampling
+anova
+anscombe’s quartet
+aov
+apache hadoop
+apis
+apparel model
+application
+application programming interface
+applied information economics
+approximate inference
+approximate nearest neighbor
+apriori
+apriori algorithm
+apriori property
+architecture
+area under the curve
+arima
+arima model
+arma
+arma model
+array
+artificial neural network
+artistic style transfer
+artiﬁcial intelligence
+artiﬁcial neural network
+artiﬁcial neural networkannealed importance sampling
+association rule
+asymptotically unbiased
+attending for classification
+attention network
+attribute
+auc
+audience
+audio
+autocorrelation function
+autoencoder
+autoencoders
+automatic speech recognition
+autoregressive model
+autoregressive moving average
+average
+aws
+aﬃne
+back-propagation
+back-propagation through time
+backprop
+backpropagation through time
+backward slash
+bag of word
+bag-of-words
+bagging
+banking
+barplot
+barplots
+based on reuters corpus
+batch normalization
+bayes error
+bayes networkgabor function
+bayes' theorem
+bayesian hyperparameter optimization
+bayesian network
+bayesian probability
+bayesian statistic
+bayes’ rule
+bayes’ theorem
+belief network
+benchmarking
+bernoulli distribution
+bernoulli naive bayes
+bfgs
+bhardwaj
+bi analyst
+bias
+bias parameter
+biased importance sampling
+big data
+bigram
+binary decision
+binary relation
+blending
+block gibbs sampling
+boltzmann distribution
+boltzmann machine
+boltzmann machinedcgan
+boosting
+bootstrap aggregation
+bottleneck feature
+bow
+box-and-whisker plot
+box-jenkins methodology
+bptt
+branch
+broadcasting
+brown corpus
+building
+burn-in
+business challenge
+business domain
+business intelligence analyst
+c4.5
+cable tv provider
+cae
+calculus
+calinski-harabasz index
+candidate rule
+caption
+captioning
+cart
+case folding
+categorical
+categorical algorithm
+categorical attribute
+categorical distribution
+categorical variable
+categorization
+caution
+cbind
+cd
+cell
+cell state
+centering trick
+central limit theorem
+centroid
+chain rule
+challenge
+character
+character data type
+characteristic
+chart
+chord
+chordal graph
+cifar dataset
+class
+class-based language model
+classical dynamical system
+classification
+classification datasets
+classification metric
+classification regression tree
+classification tree
+classifier
+classifying
+classiﬁcation
+clean up
+clickstream
+clique potential
+cluster
+cluster instability
+clustering
+cnn
+cnns
+code synthesis
+coefficient
+collaborative filtering
+collider
+color image
+column family name
+column qualifier name
+comma-separated-value
+complex cell
+compression
+computational graph
+computer vision	
+concept drift
+condition number
+conditional
+conditional computation
+conditional entropy
+conditional independence
+conditional probability
+conditional random field
+conditional rbm
+confidence
+confidence interval
+confint
+confusion matrix
+connected layer
+connection
+connectionism
+connectionist temporal classiﬁca-tion
+connectionist temporal classiﬁcation
+connectivity constraint
+consistency
+constant variance
+constrained optimization
+contengency table
+content loss
+content-based addressing
+content-based recommender system
+content-based system
+context-speciﬁc independence
+contextual bandit
+contingency table
+continuation method
+continuous
+continuous variable
+contractive autoencoder
+contrast
+contrastive divergence
+controlled support vector machine
+converting
+convex optimization
+convolution
+convolutional network
+convolutional neural network
+core material
+corpus
+correlated
+correlated variable
+correlation
+cost function
+counting
+covariance
+covariance matrix
+coverage
+credit card company
+crf
+crisp-dm
+critical temperature
+cross-correlation
+cross-entropy
+cross-validation
+crowdsourcing
+csv
+ctc
+cube
+curriculum learning
+curse of dimensionality
+customer segmentation
+cv file
+cyclic component
+d-separation
+data
+data aggregator
+data analysis
+data buyer
+data cleansing
+data collector
+data conditioning
+data creation rate
+data device
+data engineer
+data engineer role
+data exploration
+data format
+data frame
+data generating distribution
+data generating process
+data mart
+data model
+data parallelism
+data preparation
+data repository
+data savvy professional
+data scaling
+data science versus bi
+data scientist
+data scientist role
+data source
+data source identification
+data structure
+data type
+data visualization
+data warehouse
+data wrangler
+database administrator
+dataset
+dataset augmentation
+dataset inventory
+datasets
+davenport
+dba
+dbm
+decision stump
+decision tree
+decoder
+deep
+deep analytical talent
+deep belief network
+deep blue
+deep boltzmann machine
+deep feedforward network
+deep learning
+deep learning model
+deeplab v3
+deliverable
+delta framework
+demand forecasting
+denoising autoencoder
+denoising score matching
+densenet
+density estimation
+density plot
+dependent variable
+deployment
+depth
+derivative
+descriptive statistic
+design matrix
+detector layer
+deviance
+device
+diagnostic imaging
+diagnostics
+dict
+dictionary learning
+differencing
+dilated convolution
+dirac delta function
+directed graphical model
+directed graphicalmodel
+directional derivative
+dirty data
+discovery phase
+discretization
+discriminative rbm
+discriminative ﬁne-tuning
+discriminator
+distributed feature representation
+distributed representation
+diﬀerential entropy
+document categorization
+document frequency
+domain adaptation
+dotchart
+dotcharts
+double backprop
+doubly block circulant matrix
+doug
+downward closure property
+dream sleep
+driver
+dropconnect
+dropout
+dynamic counting
+dynamic struc-ture
+dynamic structure
+e-step
+early stopping
+ebm
+echo state network
+eclipse
+ecosystem
+edws
+effect size
+efficientnet
+eigendecomposition
+eigenvalue
+eigenvector
+elbo
+element
+element-wise product
+embedding
+emc google search
+emoticon
+empirical distribution
+empirical risk
+empirical risk minimization
+encoder
+energy function
+energy-based model
+engineering
+ensemble method
+enterprise data warehouse
+epoch
+equality constraint
+equivariance
+error
+error function
+error measure
+esn
+etlt
+euclidean distance
+euclidean norm
+euler-lagrange equation
+evaluation
+evaluation method
+evidence lower bound
+except operator
+expectation maximization
+expectation-maximization
+experience delay
+explaining away
+exploitation
+exploration
+exploratory
+exploratory data analysis
+exponential distribution
+extensible markup language
+eﬀective capacity
+f-score
+f1-score
+facebook
+facial key point
+facial landmark
+factor
+factor analysis
+factor graph
+factor of variation
+false negative rate
+false positive
+false positive rate
+fashion-mnist dataset
+fast r-cnn
+fc
+fcn
+feature
+feature importance
+feature map
+feature selection
+feedforward neural network
+filtering
+financial information
+finding
+fine-tuning
+finite diﬀerences
+fitted model
+fitted time series model
+fnr
+for segmentation
+forecasting
+forget gate
+forward propagation
+forward slash
+fourier transform
+fovea
+fp
+fpcd
+fpr
+frame
+framing
+free energy
+freebase
+frequent
+frequent generation
+frequent itemset
+frequentist probability
+frequentist statistic
+frobenius norm
+from scratch
+fully connected layer
+fully-visible
+fully-visible bayes network
+function
+functional derivative
+fusing
+fvbn
+gans
+gated recurrent unit
+gaussian distribution
+gaussian kernel
+gaussian mixture
+gaussian naive bayes
+gcn
+gcp
+gender detection
+geneontology
+general-ized
+generalized lagrange function
+generalized linear model function
+generative adversarial network
+generative moment matching network
+generator
+genetic sequencing
+genomics
+genotyping
+ggobi
+gibbs distribution
+gibbs sampling
+gina
+gina case study
+gl
+glm
+global contrast normalization
+global innovation network analysis
+gnuplot
+google cloud platform
+google inception-v3 model
+googlelenet
+gps system
+gpu
+grace
+gradient
+gradient tree boosting
+gram matrix
+gram matrix used
+graph
+graph search
+graphic processing unit
+graphical model
+graphical user interface
+greedy
+greedy algorithm
+green egg ham
+grocery dataset
+grocery store
+grouping
+growth need
+gui
+hadamard prod-uct
+hadamard productem
+hadoop
+hadoop distributed file system
+hadoop streaming api
+hadoop virtualization extension
+hadoop with query
+handwritten digit recognition
+hash-based
+hash-based itemsets
+hawq
+hbase
+hclust
+hdfs
+head
+heteroscedastic
+hexbinplots
+hierarchical feature representation
+histogram
+hive
+hive query language
+hiveql
+hopper
+hubbard
+human pose
+hve
+hypothesis
+hypothesis testing
+ibm watson
+id3
+id3 algorithm
+ide
+idf
+ilsvrc
+image
+image convolution
+image processing
+image ranking
+image-based approach
+image-to-image
+imagenet
+in-database
+inception
+inception-resnet
+independent
+independent variable
+inertia
+information content
+information corpus
+input layer
+input variable
+interactive development environment
+internal node
+internet of thing
+intersect operator
+inventory
+inverted document frequency
+iqr
+irrelevant variable
+isotonic regression
+itemset generation
+itemsets
+java api
+join
+jpeg
+k-itemset
+k-means
+k-means analysis
+k-means clustering
+kalman filtering
+kernel
+kernel pca
+key point
+key point with support
+key role
+kmeans
+kmode
+l2 regularization
+label
+labeled face
+lag
+laplace smoothing
+lasso
+lasso regression
+latent dirichlet allocation
+latent semantic analysis
+layer
+lda
+leaf
+leaf node
+learnability
+lemmatization
+lenet
+library
+lift
+linear
+linear classification
+linear regression
+linear regression model
+linear support vector machine
+linearity assumption
+lm
+load.image
+localizing
+log-likelihood test
+logical
+logical data type
+logistic
+logistic regression
+long short-term memory
+loss
+loss accuracy monitoring
+loss function
+loyalty card
+lstm
+madlib
+magnetic/agile/deep
+mahout
+mapper
+mapreduce
+market basket analysis
+marketing
+massively parallel processing
+master
+master node
+mathematica
+matlab
+matrix
+max pooling
+maxent
+maximum entropy
+maximum-likelihood learning
+mean
+mean absolute error
+mechanical turk
+medical image
+medical information
+medical us
+memory
+minimum confidence
+missing data
+mllib
+mlp
+mnist model
+mobile
+mobile device
+mobile phone company
+model building phase
+model detail
+model planning
+model planning phase
+model selection
+model-free collaborative filtering
+morphological feature
+moving average model
+mpp
+mturk
+multi-class
+multi-label
+multi-layer perceptron
+multi-modal fusion
+multi-output
+multimodality learning
+multinomial
+multinomial logistic
+multinomial logistic regression
+multinoulli dis-tribution
+multiple variable
+multivariate time series analysis
+my_range
+n-fold cross-validation
+na.exclude
+natural language processing
+naïve bayes
+naïve bayes classifier
+nested
+network
+neural machine translation
+neural net-workasr
+new approach
+nlp
+nmf
+nmt
+nnmf
+node
+non-linear
+non-negative matrix factorization
+nonparametric test
+nontraditional
+nontraditional device
+normal distribu-tion
+normality assumption
+normalization
+normally distributed error
+nosql
+null deviance
+null hypothesis
+number of cluster
+numeric data type
+numerical algorithm
+numerical attribute
+numerical underflow
+object localizing
+objective function
+octave
+olap
+online analytical processing
+openrefine
+operational phase
+operationalize phase
+operationalizing
+operator
+optimal hyperparameters
+optimal number of cluster
+optimizing
+optimum threshold
+outcome
+outcome confidence interval
+overfitting
+p-value
+pac learning
+pacf
+packt publishing
+pamk
+parallel cnn
+parameter
+parameter confidence interval
+parametric test
+parsing
+part-of-speech
+partial autocorrelation function
+partitioners
+partitioning
+pca
+pedestrian detection
+perceptron
+photograph
+pig
+pipe
+pivotal hd enterprise
+pl/r
+placeholder
+plot
+policy search-based algorithm
+polynomial regression
+pose
+posteriori
+precision
+preparing
+pretrained model
+pretrained word2vec embeddings
+principal component analysis
+probabilistic latent semantic analysis
+probability
+pseudo-r2
+psnr
+python
+quasi-structured data
+query
+random component
+random forest
+rattle gui
+raw image
+raw text
+raw text collection
+rbind
+rdbms
+recall
+receiver operating characteristic
+recommendation
+rectified linear unit
+redundant variable
+refinet
+region
+regression
+regression tree
+regular expression
+relu
+representation method
+rescaling
+residual
+residual deviance
+residual standard error
+resnet
+resnetxt
+retrieval pipeline
+rfid reader
+ridge
+ridge regression
+rnn
+robot
+roc
+roc curve
+role
+root
+rpart
+rpart function
+rstudio gui
+rule
+rule generation
+sa enterprise miner
+sample size
+sampling
+sampling by convolution
+sandbox
+sandbox preparation
+sas/access
+scatterplot matrix
+scatterplots
+scenario
+scientific method
+scikit-learn tool
+search
+search retrieval
+seasonality
+segmenting
+segmenting instance
+seismic processing
+semi-structured data
+sensornet
+sentiment analysis
+set operation
+sgd
+shanmugamani
+short tree
+silhouette score
+similarity
+similarity between face
+simple cnn
+single variable
+singular value decomposition
+skipping for training
+smart device
+smartphones
+smoothing
+social medium
+software package
+sparse matrix
+spart part planning
+spectral analysis
+spectral clustering
+spreadmarts
+spreadsheet
+spss modeler
+sql
+sql analysis service
+sqlquery
+squeezenet model
+sssim
+stakeholder
+stakeholder identification
+starting position
+stationary time series
+statistica
+statistical model
+statistical technique
+stemming
+stochastic gradient descent
+stochastic gradient descent algorithm
+stock trading
+stop word
+streaming for action recognition
+structure
+structured data
+structured query language
+structuring
+student’s t-test
+student’s t-testing
+style loss
+style transfer
+subqueries
+subsetting operator
+supervised
+supervised learning
+support vector machine
+support vector regression
+svd
+svg
+svm
+t-test
+target store
+technical specification
+technology data enablers
+tensorboard
+tensorflow playground
+term frequency
+testing
+text analysis
+text mining
+textual data file
+tf
+tf-idf
+tfidf
+the data science handbook
+three-dimensional
+time series analysis
+tokenization
+tom
+tool
+topic modeling
+toy datasets
+tp
+tpr
+trained model
+training
+trajectory
+transaction data
+transaction reduction
+transfer learning
+tree
+trend
+trp
+true positive
+true positive rate
+turing test
+two-sided hypothesis test
+two-sided hypothesis testing
+type
+type i error
+type ii error
+typeof
+ucf101
+ultra-nerve segmentation
+underfitting
+union all operator
+unstructured data
+unsupervised learning
+upsampling by pooling
+validation
+value learning-based algorithm
+vanilla gan
+variable selection
+varima
+vector arima
+velocity
+versus data science
+versus presentation
+vgg
+video
+video footage
+video surveillance
+visual geometry group
+visualization
+visualizing presenting data
+visualizing single variable
+voting classifier
+web scraper
+weka
+welch’s t-test
+white noise process
+wilcox.test
+wilcoxan rank-sum test
+wilcoxon rank-sum test
+window function
+word cloud
+work space
+worker node
+xception
+xml
+yarn
+zero-padding
+zipf’s law
