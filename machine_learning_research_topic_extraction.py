@@ -23,7 +23,7 @@ def filter_terms(raw_list: List[str]) -> List[str]:
     Process list of raw index terms (remove page numbers, extract abbrevations,
     lemmatize) and combine them in unique list of index terms.
     Args:
-        raw_list: List of index terms in unprocessed form.
+        raw_list: List of index terms in unprocessed form
 
     Returns:
         List of unique, processed index terms
@@ -70,7 +70,7 @@ def extract_abbreviation(s: str) -> List[str]:
     Extract abbreviations, return long term and abbreviation.
     E.g., artificial neural network (ann) -> [artificial neural network, ann]
     Args:
-        s: string term with abbreviation in brackets.
+        s: string term with abbreviation in brackets
 
     Returns:
         [long term, abbreviation]
@@ -88,10 +88,10 @@ def get_text_from_pdf(filepath: str) -> str:
     Open academic paper PDF file, extract text from pages, remove references,
     and process text (lemmatize, remove stop words, small caps).
     Args:
-        filepath: absolute file path to PDF file.
+        filepath: absolute file path to PDF file
 
     Returns:
-        Processed text extracted from file path.
+        Processed text extracted from file path
     """
     wnl = WordNetLemmatizer()
     stop_words = set(nltk.corpus.stopwords.words('english'))
@@ -124,9 +124,9 @@ def write_unique_index_terms(filepath_out: str, filepaths_in,
     into single list of unique index terms and write them to file.
     This file path can be adapted manually to fit the specific needs.
     Args:
-        filepath_out: absolute file path of file with joined index terms.
-        filepaths_in: list of absolute file path of file to be joined.
-        encoding: file encoding.
+        filepath_out: absolute file path of file with joined index terms
+        filepaths_in: list of absolute file path of file to be joined
+        encoding: file encoding
 
     Returns:
 
@@ -159,7 +159,7 @@ def create_word_cloud(text: str, index_lst: List[str],
         filepath: file path to word cloud output
         stem: True if index terms and text is to be stemmed
         figsize: word cloud figure size
-        **args: arguments for customization of word cloud.
+        **args: arguments for customization of word cloud
 
     Returns:
         Dict containing counts of index terms in text.
@@ -225,7 +225,13 @@ if __name__ == '__main__':
     add_arg('--filepath_index', type=str, default='index-terms.txt', help='File path to index term txt file. Default: index-terms.txt')
     add_arg('--filepath_word_cloud', type=str, default='wordcloud.png', help='File path to index term txt file. Default: wordcloud.png')
     add_arg('--stem', type=str2bool, default=True, help='Apply word stemming to text and index terms. Default: True.')
-    add_arg('--pdfs', nargs="+", type=str, help='List of pdf files (or single folder) as input for word cloud generation. If folder is specified, use pdfs in this folder.')
+    add_arg('--pdfs', nargs="+", type=str, help='List of PDF files (or single folder) as input for word cloud generation. If folder is specified, use all PDF files in this folder.')
+    add_arg('--figsize', type=tuple, default=(16, 9), help='Figure/Plot size. Controls resolution. Default: (16, 9).')
+    add_arg('--relative_scaling', type=float, default=.5, help='Importance of relative word frequencies for font-size in word cloud (between 0 and 1). Default: 0.5.')
+    add_arg('--max_font_size', type=int, default=100, help='Maximum font size in word cloud plot. Default: 100.')
+    add_arg('--scale', type=int, default=20, help='Controls coarseness of fit for the words. Default: 20.')
+    add_arg('--height', type=int, default=400, help='Word cloud canvas height. Default: 400.')
+    add_arg('--width', type=int, default=600, help='Word cloud canvas width. Default: 600.')
 
     args = parser.parse_args()
 
@@ -249,6 +255,10 @@ if __name__ == '__main__':
     # heuristically for pleasant visualization.
     print('Creating word cloud...')
     dct_out = create_word_cloud(joined_text, index_terms,
-                                stem=args.stem, figsize=(16, 9),
-                                relative_scaling=.5, max_font_size=100,
-                                scale=10, height=400, width=600)
+                                stem=args.stem,
+                                figsize=args.figsize,
+                                relative_scaling=args.relative_scaling,
+                                max_font_size=args.max_font_size,
+                                scale=args.scale,
+                                height=args.height,
+                                width=args.width)
