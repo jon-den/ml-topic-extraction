@@ -227,15 +227,15 @@ if __name__ == '__main__':
     add_arg('--stem', type=str2bool, default=True, help='Apply word stemming to text and index terms. Default: True.')
     add_arg('--pdfs', nargs="+", type=str, help='List of PDF files (or single folder) as input for word cloud generation. If folder is specified, use all PDF files in this folder.')
     add_arg('--figsize', type=tuple, default=(16, 9), help='Figure/Plot size. Controls resolution. Default: (16, 9).')
-    add_arg('--relative_scaling', type=float, default=.2, help='Importance of relative word frequencies for font-size in word cloud (between 0 and 1). Default: 0.5.')
-    add_arg('--max_font_size', type=int, default=72, help='Maximum font size in word cloud plot. Default: 100.')
-    add_arg('--scale', type=int, default=60, help='Controls coarseness of fit for the words. Default: 20.')
-    add_arg('--height', type=int, default=300, help='Word cloud canvas height. Default: 400.')
-    add_arg('--width', type=int, default=900, help='Word cloud canvas width. Default: 600.')
+    add_arg('--relative_scaling', type=float, default=.2, help='Importance of relative word frequencies for font-size in word cloud (between 0 and 1). Default: 0.2.')
+    add_arg('--max_font_size', type=int, default=70, help='Maximum font size in word cloud plot. Default: 70.')
+    add_arg('--scale', type=int, default=50, help='Controls coarseness of fit for the words. Default: 50.')
+    add_arg('--height', type=int, default=400, help='Word cloud canvas height. Default: 400.')
+    add_arg('--width', type=int, default=600, help='Word cloud canvas width. Default: 600.')
 
     args = parser.parse_args()
 
-    # Create joined text file from specified PDF files.
+    # Concatenate text from specified PDF files.
     if len(args.pdfs) == 1 and os.path.isdir(args.pdfs[0]):
         filepaths_pdf = glob.glob(os.path.join(args.pdfs[0], '*.pdf'))
     else:
@@ -245,7 +245,7 @@ if __name__ == '__main__':
 
     print(f'Reading {len(filepaths_pdf)} PDF files...')
     texts = [get_text_from_pdf(fp) for fp in filepaths_pdf]
-    joined_text = ' '.join(texts)
+    text_concat = ' '.join(texts)
 
     # Read index term file.
     with open(args.filepath_index, 'r', encoding='utf-8') as infile:
@@ -254,7 +254,7 @@ if __name__ == '__main__':
     # Create word cloud and save to file. Default word cloud parameters are set
     # heuristically for pleasant visualization.
     print('Creating word cloud...')
-    dct_out = create_word_cloud(joined_text, index_terms,
+    dct_out = create_word_cloud(text_concat, index_terms,
                                 stem=args.stem,
                                 figsize=args.figsize,
                                 relative_scaling=args.relative_scaling,
