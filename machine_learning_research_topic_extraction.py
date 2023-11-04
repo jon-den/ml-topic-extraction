@@ -97,10 +97,10 @@ def get_text_from_pdf(filepath: str) -> str:
     """
     wnl = WordNetLemmatizer()
     stop_words = set(nltk.corpus.stopwords.words("english"))
-    pdfReader = PyPDF2.PdfFileReader(open(filepath, "rb"))
+    pdfReader = PyPDF2.PdfReader(open(filepath, "rb"))
     text = ""
-    for i in range(pdfReader.getNumPages()):
-        text += pdfReader.getPage(i).extractText()
+    for page in pdfReader.pages:
+        text += page.extract_text()
 
     # Remove references.
     try:
@@ -222,6 +222,67 @@ def str2bool(x: str) -> bool:
     return x.lower() == "true"
 
 
+def main(args: argparse.Namespace):
+    """Construct a word cloud from a list of publications.
+
+    Pass a list of publications, match the content against a list of relevant
+    index terms, and create word cloud to summarise the research direction of
+    the passed publications. The word cloud is saved to disk.
+
+
+    Args:
+        args: Input arguments.
+
+    Returns:
+        None
+    """
+    pdfs = args.pdfs
+    filepath_index = args.filepath_index
+    stem = args.stem
+    figsize = args.figsize
+    relative_scaling = args.relative_scaling
+    max_font_size = args.max_font_size
+    scale = args.scale
+    height = args.height
+    width = args.width
+    filepath_wordcloud = os.path.join("results", args.out_filename)
+
+    # Concatenate text from specified PDF files.
+    if len(pdfs) == 1 and os.path.isdir(pdfs[0]):
+        filepaths_pdf = glob.glob(os.path.join(pdfs[0], "*.pdf"))
+    else:
+        filepaths_pdf = pdfs
+        assert all(
+            os.path.splitext(fp)[1] == ".pdf" for fp in filepaths_pdf
+        ), "Specify PDF files only!"
+
+    print(f"Read {len(filepaths_pdf)} PDF files...")
+    texts = [get_text_from_pdf(fp) for fp in filepaths_pdf]
+    text_concat = " ".join(texts)
+
+    # Read index term file.
+    if not os.path.isfile(filepath_index):
+        filepath_index = os.path.join("data", filepath_index)
+    with open(filepath_index, "r", encoding="utf-8") as infile:
+        index_terms = infile.read().split("\n")
+
+    # Create word cloud and save to file. Default word cloud parameters are set
+    # heuristically for pleasant visualization.
+    print("Create word cloud...")
+    create_word_cloud(
+        text_concat,
+        index_terms,
+        filepath=filepath_wordcloud,
+        stem=stem,
+        figsize=figsize,
+        relative_scaling=relative_scaling,
+        max_font_size=max_font_size,
+        scale=scale,
+        height=height,
+        width=width,
+    )
+
+
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Machine learning terms word cloud visualization."
@@ -234,10 +295,10 @@ def parse_args():
         help="File path to index term txt file. Default: index-terms.txt",
     )
     add_arg(
-        "--filepath_word_cloud",
+        "--out_filename",
         type=str,
         default="wordcloud.png",
-        help="File path to index term txt file. Default: wordcloud.png",
+        help="File name for word cloud. Save under results.",
     )
     add_arg(
         "--stem",
@@ -291,36 +352,5 @@ def parse_args():
 
 
 if __name__ == "__main__":
-    args = parse_args()
-
-    # Concatenate text from specified PDF files.
-    if len(args.pdfs) == 1 and os.path.isdir(args.pdfs[0]):
-        filepaths_pdf = glob.glob(os.path.join(args.pdfs[0], "*.pdf"))
-    else:
-        filepaths_pdf = args.pdfs
-        assert all(
-            os.path.splitext(fp)[1] == ".pdf" for fp in filepaths_pdf
-        ), "Specify PDF files only!"
-
-    print(f"Reading {len(filepaths_pdf)} PDF files...")
-    texts = [get_text_from_pdf(fp) for fp in filepaths_pdf]
-    text_concat = " ".join(texts)
-
-    # Read index term file.
-    with open(args.filepath_index, "r", encoding="utf-8") as infile:
-        index_terms = infile.read().split("\n")
-
-    # Create word cloud and save to file. Default word cloud parameters are set
-    # heuristically for pleasant visualization.
-    print("Creating word cloud...")
-    dct_out = create_word_cloud(
-        text_concat,
-        index_terms,
-        stem=args.stem,
-        figsize=args.figsize,
-        relative_scaling=args.relative_scaling,
-        max_font_size=args.max_font_size,
-        scale=args.scale,
-        height=args.height,
-        width=args.width,
-    )
+    parsed_args = parse_args()
+    main(parsed_args)

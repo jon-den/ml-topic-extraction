@@ -1,6 +1,6 @@
 2d
 3-itemsets
-3d 
+3d
 absolute value rectiﬁcation
 accuracy
 acf
